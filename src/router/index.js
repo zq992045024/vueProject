@@ -10,6 +10,9 @@ import search from "./searchs"
 import login from "./login"
 import register from "./register"
 import detail from "./detail"
+import tiyu from "./tiyu"
+import modern from "./modern"
+import vocal from "./vocal"
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -27,7 +30,10 @@ let router = new VueRouter({
         search,
         login,
         register,
-        detail
+        detail,
+        tiyu,
+        modern,
+        vocal
     ]
 })
 

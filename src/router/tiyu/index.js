@@ -1,10 +1,10 @@
 export default {
-    path:"/tour",
-    component:()=>import("views/tour"),
-    name:"tour",
+    path:"/Tiyu",
+    component:()=>import("views/tiyu"),
+    name:"Tiyu",
     meta:{
         tabBar:true,
         auth:false,
         topTabBar:true
     }
-}
+}   

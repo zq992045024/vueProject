@@ -116,17 +116,17 @@ export default {
         {
           text: "话剧歌剧",
           icon: "&#xe60e;",
-          path: "/show"
+          path: "/Modern"
         },
         {
           text: "休闲",
           icon: "&#xe608;",
-          path: "/show"
+          path: "/Vocal"
         },
         {
           text: "体育赛事",
           icon: "&#xe60a;",
-          path: "/show"
+          path: "/Tiyu"
         },
         {
           text: "音乐会",

@@ -6,10 +6,10 @@
     </div>
     <div class="y_head">
       <div class="y_head_a">
-        <div class="photo">
+        <v-touch class="photo" tag="li" @tap="useLogin"> 
           <div class="photo_i"></div>
-          <p>登录</p>
-        </div>
+          <p>{{$store.state.user.username ? "用户名："+$store.state.user.username :"登录"}}</p>
+        </v-touch>
         <div class="y_main">
           <p>个人主页&gt;</p>
         </div>
@@ -109,7 +109,14 @@
 
 <script>
 export default {
-    
+    methods:{
+      useLogin(){
+        this.$router.push('/login')
+      }
+    },
+    created(){
+      console.log(this.$store.state.user.username)
+    }
 };
 </script>
 
@@ -148,7 +155,7 @@ export default {
 }
 .photo {
   float: left;
-  width: 2.5rem;
+  width: 5.5rem;
   height: 2rem;
 }
 .photo .photo_i {
@@ -163,7 +170,7 @@ export default {
 .photo p {
   font-weight: 900;
   margin-top: 0.5rem;
-  width: 1rem;
+  width:4rem;
   height: 1rem;
   font-size: 0.4rem;
   color: #fff;

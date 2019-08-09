@@ -1,6 +1,6 @@
 <template>
     <div>
-        <topTabBar />
+     
         <div class="Middle">
             <div class="Middle_item" v-for="(item,index) in movieList" :key="index">
                 <div class="Middle_item_pic">
@@ -38,10 +38,10 @@
 <style scoped>
 
     .Middle{
-        /*width: 100%;*/
+        width: 12rem;
         height: 100%;
         position: absolute;
-        top: 1.4rem;
+        top: 1.7rem;
         left: .5rem;
         overflow: auto;
 

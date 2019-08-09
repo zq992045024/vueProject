@@ -1,7 +1,7 @@
 <template>
 
     <div class="movieWrapper">
-<topTabBar />
+
         <div class="Middle">
             <v-touch class="Middle_item" v-for="(item,index) in movieList" @tap="ych(item.id)" tag="div" :key="index">
                 <div class="Middle_item_pic">
@@ -54,7 +54,7 @@
 <style scoped>
 
     .Middle{
-        /*width: 100%;*/
+        width: 12rem;
         height: 100%;
         position: absolute;
         top: 1.4rem;

@@ -1,10 +1,10 @@
 export default {
-    path:"/tour",
-    component:()=>import("views/tour"),
-    name:"tour",
+    path:"/Modern",
+    component:()=>import("views/modern"),
+    name:"Modern",
     meta:{
         tabBar:true,
         auth:false,
         topTabBar:true
     }
-}
+}   

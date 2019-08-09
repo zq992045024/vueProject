@@ -47,6 +47,7 @@ const mutations = {
         sessionStorage.setItem('username', state.username)
         sessionStorage.setItem('password', state.password)
         var token = document.cookie.split('=')[1];
+        console.log(document.cookie.split('='))
         sessionStorage.setItem('token', token);
 
       } else {

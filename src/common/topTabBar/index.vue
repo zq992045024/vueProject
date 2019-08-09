@@ -1,37 +1,12 @@
 <template>
     <div id="footer">
-        <div class="box" @click="abc()">返回</div>
-        <div class="box1">
-            <i class="iconfont">&#xe605;</i>
-            <input type="text" value placeholder=" 搜索明星、演出、场馆">
-        </div>
+        <SearchCom />
         <ul>
             <router-link v-for="(item,index) in list" :to="item.path" tag="li" :key="index">
             <span>{{item.text}}</span>
             </router-link>
         </ul>
-        <div class="list">
-            <ul>
-                <li>
-                    <select>
-                        <option>综合排序</option>
-                        <option>最新优先</option>
-                        <option>低价优先</option>
-                        <option>好评优先</option>
-                    </select>
-                </li>
-                <li>
-                    <select>
-                        <option>全部时间</option>
-                    </select>
-                </li>
-                <li>
-                    <select>
-                         <option>在线选座</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
+        
     </div>
 </template>
 
@@ -46,15 +21,15 @@
                         text:"演唱会",
                     },
                     {
-                        path:"/show",
+                        path:"/Modern",
                         text:"话剧表演",
                     },
                     {
-                        path:"/tour",
+                        path:"/Vocal",
                         text:"休闲展览",
                     },
                     {
-                        path:"/tour",
+                        path:"/Tiyu",
                         text:"体育赛事",
                     },
                     {
@@ -70,7 +45,6 @@
         },
         methods:{
             abc(){
-                this.$router.push("../../components/Vocal")
             }
         }
     }
@@ -117,7 +91,8 @@
     #footer ul {
         display: flex;
         white-space: nowrap;
-        overflow: auto
+        overflow: auto;
+        height: 0.6rem;
     }
     #footer ul li {
         display: flex;

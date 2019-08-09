@@ -4,6 +4,7 @@ export default {
     name:"show",
     meta:{
         tabBar:true,
-        auth:false
+        auth:false,
+        topTabBar:true
     }
 }

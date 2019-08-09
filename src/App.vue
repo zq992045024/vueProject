@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+     <topTabBar  v-if="$route.meta.topTabBar"/>    
     <keep-alive exclude="detail">
       <router-view></router-view>
     </keep-alive>
